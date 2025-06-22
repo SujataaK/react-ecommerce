@@ -1,48 +1,71 @@
-# React + Vite
+# 🛒 MyShop – Ecommerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# 🛍️ MyShop - Full Stack Ecommerce App
-
-A full-stack ecommerce platform with user authentication, category-wise product listings, sale section, cart system, product upload with image handling, and MongoDB integration.
+A full-stack ecommerce website built using **React**, **Node.js**, **Express**, and **MongoDB**. This application allows users to register, log in, browse products by category, add items to their cart or wishlist, and checkout. Admins can upload products with images using a dedicated dashboard.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🔐 User Signup/Login with JWT Authentication
-- 👗 Product Categories: Fashion, Skincare, Gadgets, Home Decor, Groceries
-- 🔖 Wishlist & 🛒 Cart Functionality
-- 🧾 Checkout Page
-- 📦 Add Products with Image Upload (Multer)
-- 📰 News Articles API Integration
-- 🔄 Password Visibility Toggle
-- 🧾 Fully Connected with MongoDB Atlas
+- 🔐 **Authentication** – Sign up, log in, and JWT-based user sessions
+- 🛍️ **Product Categories** – Fashion, Skincare, Gadgets, Groceries, Home Decor, and Sale
+- 🛒 **Shopping Cart** – Add/Remove items from cart
+- ❤️ **Wishlist Support**
+- 📷 **Product Upload with Image Support** – via Multer
+- 📰 **News Integration** – Using NewsAPI for demo content
+- 🧾 **Checkout Page**
+- 👁️‍🗨️ **Password Toggle** – Show/Hide passwords on login & signup
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-### Frontend:
-- React.js
-- React Router
-- Bootstrap
-- Axios
+### Frontend
+- React.js (Vite)
 - Context API
+- Axios
+- Bootstrap 5
+- React Icons
 
-### Backend:
+### Backend
 - Node.js
 - Express.js
-- MongoDB + Mongoose
-- Multer (for file uploads)
-- dotenv
-- CORS
-- JWT for Auth
+- MongoDB (via Mongoose)
+- Multer (file upload)
+- JWT for authentication
+- CORS, dotenv
+
+---
+
+## 🗂️ Project Structure
+
+ecommerce/
+├── backend/
+│ ├── routes/
+│ ├── models/
+│ ├── uploads/
+│ ├── db.js
+│ └── index.js
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── context/
+│ └── App.jsx
+├── public/
+├── README.md
+├── package.json
+└── vite.config.js
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/myshop.git
+cd myshop
+Setup Backend
+bash
+Copy
+Edit
+cd backend
+npm install
