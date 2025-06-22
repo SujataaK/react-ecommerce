@@ -38,7 +38,7 @@ A full-stack ecommerce website built using **React**, **Node.js**, **Express**, 
 
 ## 🗂️ Project Structure
 
-ecommerce/
+myshop/
 ├── backend/
 │ ├── routes/
 │ ├── models/
@@ -54,6 +54,11 @@ ecommerce/
 ├── README.md
 ├── package.json
 └── vite.config.js
+
+yaml
+Copy
+Edit
+
 ---
 
 ## 🔧 Setup Instructions
@@ -63,9 +68,30 @@ ecommerce/
 ```bash
 git clone https://github.com/yourusername/myshop.git
 cd myshop
-Setup Backend
+2. Setup Backend
 bash
 Copy
 Edit
 cd backend
 npm install
+Create a .env file in the backend/ directory with:
+
+ini
+Copy
+Edit
+MONGO_URI=your_mongo_db_uri
+PORT=5000
+JWT_SECRET=your_jwt_secret
+Start the backend server:
+
+bash
+Copy
+Edit
+node index.js
+3. Setup Frontend
+bash
+Copy
+Edit
+cd ..
+npm install
+npm run dev
